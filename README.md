@@ -1,16 +1,51 @@
-# React + Vite
+# 🩸 Community Blood Donor Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React-based web application that helps users find blood donors based on blood group and city.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- Fetch donor data from API
+- Filter donors by blood group
+- Search donors by city
+- Request help from donors
+- Request status persists using localStorage
+- Loading and empty states handling
+- Clean card-based UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React (useState, useEffect)
+- JavaScript
+- CSS
+- JSONPlaceholder API
+
+---
+
+## 📡 API Used
+
+https://jsonplaceholder.typicode.com/users
+
+This API provides mock user data which is mapped into donor data in the application.
+
+---
+
+## ⚙️ How It Works
+
+1. Fetches user data from API using `useEffect`
+2. Converts users into donors by adding:
+   - Blood group (random)
+   - Availability (random)
+3. Stores data using `useState`
+4. Filters donors based on:
+   - Selected blood group
+   - Entered city
+5. Displays donor cards dynamically using `map()`
+6. Updates request status and stores it in `localStorage`
+
+---
+
+## 📂 Project Structure
