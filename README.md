@@ -48,4 +48,12 @@ This API provides mock user data which is mapped into donor data in the applicat
 
 ---
 
-## 📂 Project Structure
+## 💡 Key Concepts Used
+
+- useState for state management  
+- useEffect for API calls  
+- Conditional rendering  
+- Array methods (map, filter)  
+- LocalStorage for persistence  
+
+---
